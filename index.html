@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Genesing uit die hart.co.za</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+     /* Full screen overlay */
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+/* The animated spinner */
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #0400ff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Class to hide the loader */
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+  .fakeimg {
+    height: 400x;
+    background: #ffffff;
+  }
+   th, td {
+    border-style: solid;
+  border-color: #000000;
+}
+.text-columns {
+  column-count: 2;
+  column-gap: 50px;
+}
+ #myDIV{
+            background:rgb(94, 133, 139);
+            border:3px solid rgb(0, 0, 0);
+            padding:5px;
+            margin:5px ;
+        }
+.form {
+  border: 2px solid rgb(0, 0, 0);
+  line-height: 2.5;
+  width: 100%;
+  padding: 5px;
+  font-size: 1.10rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px black;
+  border-radius: 10px;
+  background-color: rgb(151, 148, 148);
+  background-image: linear-gradient(
+    to top left,
+    rgb(0 0 0 / 0.2),
+    rgb(0 0 0 / 0.2) 30%,
+    transparent
+  );
+  box-shadow:
+    inset 2px 2px 3px rgb(255 255 255 / 0.6),
+    inset -2px -2px 3px rgb(0 0 0 / 0.6);
+}
+
+.form:hover {
+  background-color: rgb(0, 174, 255);
+}
+
+.form:active {
+  box-shadow:
+    inset -2px -2px 3px rgb(255 255 255 / 0.6),
+    inset 2px 2px 3px rgb(0 0 0 / 0.6);
+}
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: rgb(175, 175, 175);
+  border-radius: 100px;
+  border: 2px solid #000000;
+  padding: 5px;
+  width: 75%;
+  height: 50px;
+  color: rgb(0, 0, 0);
+}
+
+.button1:hover {
+  background-color: #32d8ee;
+  color: rgb(0, 0, 0);
+}
+.button2 {
+  background-color: rgb(175, 175, 175);
+  border-radius: 100px;
+  border: 2px solid #000000;
+  padding: 5px;
+  width: 60%;
+  height: 50px;
+  color: rgb(0, 0, 0);
+}
+
+.button2:hover {
+  background-color: #32d8ee;
+  color: rgb(0, 0, 0);
+}
+.footer {
+  background-color: #24262b;
+  padding: 40px 0;
+  color: #ffffff;
+}
+.footer-container {
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to move to the next line on small screens */
+}
+.footer-col {
+  width: 25%; /* Four columns on desktop */
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer-col a {
+  color: #bbbbbb;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+.footer-col a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+/* 3. Media Queries for Responsiveness */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%; /* Two columns on tablets */
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%; /* Single column on phones */
+  }
+}
+  </style>
+</head>
+<body>
+  <div id="loader-wrapper">
+  <div class="loader"></div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+   <img src="IMG./Genesinguitdiehartondek.png" style="max-width:100%;height:auto;">
+</div>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html">Tuisblad</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="Kursusse.html">Kursusse</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Hartskampe.html">Genesings kampe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Getuienisse.html">Getuienisse</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>  
+    </ul>
+  </div>  
+</nav>
+
+<div class="container" style="margin-top:30px">
+  <div class="row">
+    <div class="col-sm-4">
+      
+      
+      <div class="fakeimg"><img src="IMG./genesinguitdiehart.png" style="max-width:100%;height:100%;"></div>
+      <p>PSALM 147:3 - Hy genees die wat gebroke is van hart en Hy verbind hulle wonde</p>
+
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h2 style="font-size:5vw"><b>Waaroor gaan Genesing Uit Die Hart?</b></h2>
+      
+      <div class="fakeimg"><img src="IMG./Help.jpg" style="max-width:100%;height:100%;"></div>
+      <p style="font-size:30px"><b>Ons Passie</b></p>
+      <p>Ons Passie is om ‘n pad te stap met individue wat geestelike en emosionele sielswonde het, sodat elkeen wat deur die hulp van Die Heilige Gees by volkome genesing kan uitkom, en hulle unieke skeppingsdoel kan ontdek.</p>
+<p>Veronica Loots, praktiseer in Pastorale Berading en vorm deel van ‘n span fasiliteerders.
+Ons is ook deel van ‘Professional counselling Academy’ en Gerigistreer by ‘S.A Association’ Reg. No 0159-11/2023.</p>
+
+<p>Die kern van ons missie is om 'n ruimte van empatie en ondersteuning te skep vir individue wat deur moeilike tydperke gaan. Ons erken die inherente waarde van elke siel en die unieke uitdagings wat elke persoon mag ervaar. Dit is ons roeping om 'n hand uit te reik na diegene wat diep binne in hulself 'n behoefte aan genesing voel.
+  </p>
+  
+    <hr class="d-sm-none">
+    
+    
+      <div class="fakeimg"><img src="IMG./Praise.jpg" style="max-width:100%;height:100%;"></div>
+      <p style="font-size:30px"><b>ONS DOELWIT</b>
+      </p>
+      <p style="font-size:16px"><b>Genesing uit die hart se doelwit is om mense te help om ten volle geestelik te herstel sodat elkeen hul volle potensiaal kan bereik</b>
+      </p>
+
+      <ul>
+  <li>Hoe lyk jou sielwonde?</li>
+  <li>Wat gaan in jou sielsdemensie aan?</li>
+  <li>Is jy emosioneel gewond?</li>
+</ul>
+
+<p>Emosionele welstand het ‘n groot invloed op jou lewe om jou potensiaal te bereik, daarom maak ons dit ons missie om mense bewus te maak van die bogenoemde, sodat almal by genesing kan uitkom, omdat elke persoon verdien om voluit te lewe!</p>
+<hr class="d-sm-none">
+      <div class="fakeimg"><img src="IMG./Hurt.jpg" style="max-width:100%;height:100%;"></div>
+      <p style="font-size:30px"><b>HOE SIEN JY JOUSELF</b>
+      </p>
+      <p style="font-size:16px">Ons streef daarna om mense te help om in hulle gees, siel en liggaam gesond te word.<br>
+
+Elke persoon se genesing moet van binne af plaasvind. 97% van ons siektes kom uit die siel en dit beïnvloed die liggaam.<br>
+Negatiewe en verkeerde denkpatrone besoedel die liggaam en veroorsaak dan uit die aard allerlei siektes wat gekoppel word aan spesifieke emosionele toestande soos vrees, despressie en skuldgevoellens.<br>
+
+Ons moet die OORSPRONG van die probleem ontdek, en nie die simptome aanhou behandel nie. <br>GENESING UIT DIE HART wil jou graag help om daadwerklik jou lewe sodanig te verander, dat jy gesond, gebalanseerd en vervuld jou lewensroeping kan uitleef.<br>
+Ons berading spesialiseer in verskeie areas
+      </p>
+    <hr class="d-sm-none">
+    <h1 style="text-align:center;"><u>Berading</u></h1>
+    <p><b>Onderwerpe wat dikwels bespreek word en hanteer word is onder andere:</b></p>
+     <div class="text-columns" style="font-size 3vw">
+• Kinders wat gemolesteer is of trauma beleef.<br>
+• Trauma by volwassenes.<br>
+• Konflikhantering.<br>
+• Woede en angs.<br>
+• Depressie<br>
+• Verwerping<br>
+• Swak selfbeeld.<br>
+• Egskeiding geleiding<br>
+• Rou proses<br>
+• Verkragting<br>
+• Satanisme<br>
+• Okkulte<br>
+• Bevryding<br>
+• Eetversteurings<br>
+• Selfmoordneigings<br>
+• Selfbeserings<br>
+• Verslawing<br>
+• Voorhuwelikse seks<br>
+• Mishandeling<br>
+• Huweliks berading<br>
+ 
+</div>
+<hr class="d-sm-none">
+<p><b>Open beradings form met die volgende link</b></p>
+<button  class="berading form" type="button" id="toggleDivButton" onclick="toggleDiv()">Berading Form </button>
+<div id="myDIV" style="display:none;"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScS2QBJD5Q4GXz-WVVKVIwo5DK0LX2pcxF8v2shUkhgLqDm-A/viewform?embedded=true" width="100%" height="2003" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
+<p><b>KONTAK ONS GERUS VIR N AFSPRAAK OOR GOOGLE MEET OF INDIVIDUELE BERADING SESSIES</b></p>
+<p>Veronica Loots: <a href="tel:0826082104">082 608 2104</a><br><a href="tel:0826082104">
+  <button class="button button2" style="font-size:24px">Call or WhatsApp <i class="fa fa-phone"></i></button></a>
+</p>
+<div>  <a href="13 JUNIE 2026.pdf" download="13 JUNIE 2026.pdf" target="_blank">mordor241@gmail.com</a> <button class="button button1" style="font-size:24px"> <a href="13 JUNIE 2026.pdf" download="13 JUNIE 2026.pdf" target="_blank">Send Email</a></button></div>
+<hr class="d-sm-none">
+<p>
+  
+</p>
+
+
+
+<script>
+    function toggleDiv() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    window.addEventListener("load", () => {
+  const loader = document.getElementById("loader-wrapper");
+  loader.classList.add("loader-hidden");
+});
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+    user = prompt("Please enter your name:", "");
+    if (user != "" && user != null) {
+      setCookie("username", user, 365);
+    }
+  }
+}
+</script>
+
+      <h3>Some Links</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Meer oor ons</h4>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Kampe</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+  </div>
+</footer>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+</div>
+
+</body>
+</html>

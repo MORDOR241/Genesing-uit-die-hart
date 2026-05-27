@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Genesing uit die hart.co.za</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+   <img src="IMG/Genesinguitdiehartondek.png" style="max-width:100%;height:auto;">
+</div>
+<style>
+  /* Full screen overlay */
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+/* The animated spinner */
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #0400ff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Class to hide the loader */
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #ee0000;
+  color: white;
+  border-radius: 50%; /* Makes it a circle */
+  display: flex;
+  justify-content: center; /* Horizontally centers text */
+  align-items: center;     /* Vertically centers text */
+  text-align: center;
+}
+.container {
+  display: flex;          /* Aligns circle and text in a row */
+  align-items: center;    /* Vertically centers text with the circle */
+  gap: 15px;              /* Adds space between the circle and text */
+}
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: rgb(175, 175, 175);
+  border-radius: 100px;
+  border: 2px solid #000000;
+  padding: 5px;
+  width: 100%;
+  height: 100px;
+  color: rgb(0, 0, 0);
+}
+
+.button1:hover {
+  background-color: #32d8ee;
+  color: rgb(0, 0, 0);
+}
+.button2 {
+  background-color: rgb(175, 175, 175);
+  border-radius: 100px;
+  border: 2px solid #000000;
+  padding: 5px;
+  width: 100%;
+  height: 100px;
+  color: rgb(0, 0, 0);
+}
+
+.button2:hover {
+  background-color: #32d8ee;
+  color: rgb(0, 0, 0);
+}
+.footer {
+  background-color: #24262b;
+  padding: 40px 0;
+  color: #ffffff;
+}
+.footer-container {
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to move to the next line on small screens */
+}
+.footer-col {
+  width: 25%; /* Four columns on desktop */
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer-col a {
+  color: #bbbbbb;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+.footer-col a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+/* 3. Media Queries for Responsiveness */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%; /* Two columns on tablets */
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%; /* Single column on phones */
+  }
+}
+</style>
+
+<body>
+  <div id="loader-wrapper">
+  <div class="loader"></div>
+</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="Genesing uit die hart.html">Tuisblad</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="Kursusse.html">Kursusse</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Hartskampe.html">Genesings kampe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Getuienisse.html">Getuienisse</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>  
+    </ul>
+  </div>  
+</nav>
+<div class="container" style="margin-top:30px">
+  <div class="row">
+   
+
+      <hr class="d-sm-none">
+    </div>
+<div class="col-sm-12">
+  <h1 style="text-align:center;"><b><u>Getuienisse</u></b>
+</h1>
+
+<h2 style="text-align:center;"><b><u>Valarie Durand</u></b>
+</h2><br>
+<P>Ek was vir baie jare 'n Christen. Tog het ek steeds 'n blokkasie gevoel in my verhouding met God. My hoofkennis het vir my gesê dat God altyd by my is en aktief in my lewe werk. Ek het geweet ek is veronderstel om God lief te hê, maar ek kon nie liefde in my hart voel nie. Wanneer ander Christene gedeel het oor hul verhouding met God en die kere wat hulle Sy stem hoor en diep geliefd voel, sou ek so verbaas voel. Terselfdertyd sou ek wonder wat fout is met my en hoekom ek God nie op dieselfde manier kon ervaar nie. Ek het verlang om van God te hoor, en Sy liefde en behae in my te voel, maar ek het nie geweet hoe nie.</P>
+
+<p>Ek het probleme in my huwelik gehad en dinge het vir 'n paar jaar swaar in my hart geweeg, tot die punt waar ek nie eers seker was dat ek geweet het hoe om myself of ander lief te hê nie. Ek het by Kies Die Lewe ingeskakel en ek het God gevra om die blokkasies in my hart te verwyder en vir my 'n nuwe hart te gee sodat ek Sy liefde kan ontvang, myself kan liefhê, my kinders en ander kan liefhê en my eksman kan vergewe en vry kan spreek. Tydens my hernuwingsgebed is ek gelei om te bely, te bekeer en bande te verbreek met die erfenis van okkulte van jare gelede toe my ma se familie fortuinvertellers geraadpleeg het, asook die okkultiese invloede op myself en my generasie. Terwyl ek gebid het, het die Heilige Gees geopenbaar dat my pa se voorgeslagte by vrymesselaars betrokke was.</p>
+
+Ek het namens my pa se familie en toekomstige geslagte gebid om die vloeke in Jesus se naam te verbreek en verklaar dat dit nie meer 'n houvas op my of deur my het nie. Ek het God gevra vir genesing en om beheer te neem om my en my nageslagte van vandag af te lei en te beskerm, en om elkeen van ons familielede te help om Jesus persoonlik te leer ken as hulle Verlosser en om Sy gawe van verlossing te ontvang.<br>
+
+Vir my ma se kant het ek berou gehad en geestelike bande met die okkulte verbreek. Dit het vir my duideliker geword dat my sondige gedrag en gesindheid 'n groot rol gespeel het in die verbrokkeling van my huwelik. Ons verhoudingsprobleme het mettertyd opgebou uit argumente, oordele, trots, bitterheid en onvergewensgesindheid van albei kante.<br>
+
+Ek is ook gelei om te bekeer van oordele teen my ouers. Deuteronomium 27:16 “‘Vervloek is elkeen wat sy vader of sy moeder oneer aandoen.’ … My gebedsberaders het my herinner aan die vers “Moenie ander oordeel nie, en jy sal nie geoordeel word nie. Want jy sal behandel word soos jy ander behandel. Die standaard wat jy gebruik om te oordeel, is die standaard waarvolgens jy geoordeel sal word.” Matteus 7:1-2 NLV<br>
+
+In die aanloop tot my hernuwingsgebed het die Heilige Gees geopenbaar dat ek selfveroordeling gehad het. Destyds was my gedagtes mistig en kon ek nie dinge saamvoeg nie. So, ek het besluit om 'n paar antwoorde te soek deur na 'n boek te gaan deur Dr. Michelle Strydom getiteld "Healing begins with sactification of the heart."<br>
+
+By Kies Die Lewe het die beraders gewaarsku dat ons as Christene bewus moet wees van hoe Satan ons deur selfoordeel aanval. Ek is toe in gebed gelei om my eie oordele teen myself vry te spreek. Ek het myself beoordeel omdat ek onbeminlik is, omdat ek nie weet hoe om lief te hê nie, omdat ek 'n slegte vrou en 'n slegte ma was, omdat ek seer en pyn vir my man en kinders gebring het. Ek is daaraan herinner dat wanneer ons vashou aan onvergewensgesindheid en oordele teen onsself, ons sê dat Jesus se dood aan die kruis nie goed genoeg is om vir ons vergifnis en dus werklike en blywende vryheid te bring nie. Te midde van die teleurstellings en pyn in my kinderjare en huwelik, het ek 'n aantal vernietigende innerlike geloftes gemaak. Ek is daaraan herinner dat innerlike geloftes soos kontrakte of beloftes is wat ons aan onsself maak om lyding in die toekoms te vermy. Die innerlike gelofte verteenwoordig ons wat ons wil bo God s'n kies, en keer dat ons ons aan God se groter planne en seëninge vir ons onderwerp. Tydens die hernuwingsgebed is ek gelei om afstand te doen van die lys van innerlike geloftes wat ek gemaak het, insluitend: "Ek sal nie soos my ma wees nie," "Ek sal 'n gelukkige gesin hê," "Ek sal altyd sterk wees," "Ek sal hard werk en suksesvol wees,” “Ek sal nie op neergesien word nie,” en “Ek sal nie toelaat dat iemand my seermaak nie.” Ek het gebid om my ouers, eksman en ander te vergewe wat my pyn in die verlede veroorsaak het wat tot hierdie innerlike geloftes gelei het. Ek het die innerlike geloftes vervang met God se waarheid vir my lewe - dat God my liefhet en my aanvaar net soos ek is, God is in beheer, en Hy het goeie planne vir my en my kinders. God is my krag en toevlug en sal die gevegte vir my stry! My raadgewers het die vers gedeel “My genade is vir jou genoeg, want my krag word in swakheid volbring. Daarom sal ek des te meer oor my swakhede roem, sodat die krag van Christus op my kan rus.”<br>
+2 Korintiërs 12:9.
+
+Selfs nadat ek 'n Christen geword het, het ek steeds op my eie krag gestreef, situasies probeer beheer en God nie ten volle vertrou nie. My raadgewers het my in gebed gelei om te bekeer vir self-strewe en om my hart oop te maak vir Jesus en Hom heelhartig te volg. Ek het gebid om my ou self aan die kruis te kruisig en om nooit terug te kyk nie, en om net uit te sien na die toekoms van God se planne. Ek het verklaar dat ek my identiteit in Christus en God se gawes in hul volle potensiaal aanvaar, en dat ek die volle wapenrusting van God aantrek en 'n vegter vir God sal wees.
+
+Toe ek my oë toemaak en vir God vra: "Hoe sien U my?" die gedagte van 'n prinses het by my opgekom.  En Hy sê vir my: Jy het jou verlossing by My kom vat.  Waarlik kom vat en smaak My Vryheid.  Jy leef in oorwinning.  Jy leef in My krag.  Jy weet Ek is jou Rots, jou Saligmaker en jou Bruidegom.  Jou liefde vir My bekoor My.  Jy is geregtig in My.
+
+Ek weet God het my hart vernuwe en die Heilige Gees help my om meer liefdevol, geduldig, vriendelik en vergewensgesind te wees in my gedagtes, woorde en dade terwyl ek my daagliks aan Sy wil oorgee. Ek vertrou op God se beloftes.  Ek weet my nuwe adres gaan net vreugde en vrede en voorspoed inhou.
+
+Ek wil vir jou 'n toekoms vol hoop gee... Jeremia 29:11.
+
+By Kies Die Lewe is waar God my gered het, my gebrokenheid genees het, my skaamte verwyder het, my hoop herstel het en my 'n doel gegee het! 
+
+Veronica, dankie dat jy van die begin af 'n suster in my geloofsreis is!
+
+Dankie Jesus dat U my vrygemaak het sodat ek regtig vry kan wees. Ek hou vas aan hierdie vryheid en sal dit vir niks in die wêreld prysgee nie.
+
+Galasiërs‬ ‭5:1‬ ‭DB‬
+[1] Christus het ons vrygemaak om regtig vry te wees. Hou vas aan hierdie vryheid. Moet dit vir niks ter wêreld prysgee nie. Moenie toelaat dat ander mense julle weer slawe van hulle skewe sienings maak nie.</P>
+            <hr class="d-sm-none">
+
+  
+
+
+    
+
+
+
+
+<script>
+   function toggleDiv() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+   window.addEventListener("load", () => {
+  const loader = document.getElementById("loader-wrapper");
+  loader.classList.add("loader-hidden");
+});
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+    user = prompt("Please enter your name:", "");
+    if (user != "" && user != null) {
+      setCookie("username", user, 365);
+    }
+  }
+}
+</script>
+
+
+<h3>Some Links</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+</div>
+    </div>
+    </div>
+
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Meer oor ons</h4>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Kampe</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+  </div>
+</footer>
+      <div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+</div>
+</body>
+</html>

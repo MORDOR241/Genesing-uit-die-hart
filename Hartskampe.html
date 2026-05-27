@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Genesing uit die hart.co.za</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+   <img src="IMG/Genesinguitdiehartondek.png" style="max-width:100%;height:auto;">
+</div>
+<style>
+  /* Full screen overlay */
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+/* The animated spinner */
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #0400ff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Class to hide the loader */
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #ee0000;
+  color: white;
+  border-radius: 50%; /* Makes it a circle */
+  display: flex;
+  justify-content: center; /* Horizontally centers text */
+  align-items: center;     /* Vertically centers text */
+  text-align: center;
+}
+.container {
+  display: flex;          /* Aligns circle and text in a row */
+  align-items: center;    /* Vertically centers text with the circle */
+  gap: 15px;              /* Adds space between the circle and text */
+}
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: rgb(175, 175, 175);
+  border-radius: 100px;
+  border: 2px solid #000000;
+  padding: 5px;
+  width: 100%;
+  height: 100px;
+  color: rgb(0, 0, 0);
+}
+
+.button1:hover {
+  background-color: #32d8ee;
+  color: rgb(0, 0, 0);
+}
+.button2 {
+  background-color: rgb(175, 175, 175);
+  border-radius: 100px;
+  border: 2px solid #000000;
+  padding: 5px;
+  width: 100%;
+  height: 100px;
+  color: rgb(0, 0, 0);
+}
+
+.button2:hover {
+  background-color: #32d8ee;
+  color: rgb(0, 0, 0);
+}
+.footer {
+  background-color: #24262b;
+  padding: 40px 0;
+  color: #ffffff;
+}
+.footer-container {
+  max-width: 1170px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap; /* Allows items to move to the next line on small screens */
+}
+.footer-col {
+  width: 25%; /* Four columns on desktop */
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.footer-col ul {
+  list-style: none;
+}
+.footer-col a {
+  color: #bbbbbb;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+.footer-col a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+/* 3. Media Queries for Responsiveness */
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%; /* Two columns on tablets */
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%; /* Single column on phones */
+  }
+}
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+
+  width: 180px;
+}
+
+div.gallery-item:hover {
+  
+  transform: scale(1.2);
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+</style>
+
+<body>
+  <div id="loader-wrapper">
+  <div class="loader"></div>
+</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="IMG/Genesing uit die hart.html">Tuisblad</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="Kursusse.html">Kursusse</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Hartskampe.html">Genesings kampe</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Getuienisse.html">Getuienisse</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>  
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>  
+    </ul>
+  </div>  
+</nav>
+<div class="container" style="margin-top:30px">
+  <div class="row">
+
+<div class="col-sm-12">
+  <h1 style="text-align:center;"><b><u>Genesings Kampe</u></b>
+</h1>
+
+<p style="font-size:16px">
+Die doelwit van Genesings kampe is om mense se harte met God te versoen en om genesing te bring deur die Heilige Gees vir gebroke harte.<br>
+
+Ons bied kampe aan in Pongola en oor KZN. Elke kamp is n unieke ervaring waar mense innerlike genesing en bevryding kry soos mense ontdek wie God is en wie hulle is in Christus.
+</p>
+<hr class="d-sm-none">
+  <h2 id="Werkswinkels" style="text-align:center;"><b><u>Ons volgende kamp/e</u></b>
+</h2>
+<br>
+    <div class="fakeimg"><img src="IMG/OKT1.jpg" style="width:100%;height:auto; max-width: 700px; display: block; margin-left: auto;
+  margin-right: auto;" ></div>
+    <div class="fakeimg"><img src="IMG/OKT2.jpg" style="width:100%;height:auto; max-width: 700px; display: block; margin-left: auto;
+  margin-right: auto;"></div>
+
+<hr class="d-sm-none">
+   <h2 id="Bybelstudie" style="text-align:center;"><b><u>Vorige Kampe</u></b>
+</h2>
+<p style="text-align:center;"><b>Kampe wat U dalk uitgemis het of net na trug wil kyk</b></p>
+<p><u><b>Die identiteits Kamp</b></u>
+
+
+    <div class="gallery">
+
+<div class="gallery-item">
+  <a target="_blank" href="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/689017780_940808585387869_315114005417941442_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFVeWrpY8f_7zsSw5LR6bYdPWNCXRoo9ew9Y0JdGij17AuVlJkCjt3A4x5AB46g6A1cc-RU5E42wPeXJTiy674z&_nc_ohc=Db2o6MTl5JkQ7kNvwEMsvkI&_nc_oc=Ado1nIikKEaeaTRvs9mRSbk6b0O_vDEmdusyr78C6GcSAa8_nKiZkkUojSDbkk8c-k0&_nc_zt=23&se=-1&_nc_ht=scontent.fdur1-1.fna&_nc_gid=clhkflu5sINaJDqzbQMKBw&_nc_ss=7b2a8&oh=00_Af6KF3pdgyt5HsBiGCbtjjBg25lMeN7WDcwJTzjOex5Xvw&oe=6A1A665F">
+    <img src="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/689017780_940808585387869_315114005417941442_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFVeWrpY8f_7zsSw5LR6bYdPWNCXRoo9ew9Y0JdGij17AuVlJkCjt3A4x5AB46g6A1cc-RU5E42wPeXJTiy674z&_nc_ohc=Db2o6MTl5JkQ7kNvwEMsvkI&_nc_oc=Ado1nIikKEaeaTRvs9mRSbk6b0O_vDEmdusyr78C6GcSAa8_nKiZkkUojSDbkk8c-k0&_nc_zt=23&se=-1&_nc_ht=scontent.fdur1-1.fna&_nc_gid=clhkflu5sINaJDqzbQMKBw&_nc_ss=7b2a8&oh=00_Af6KF3pdgyt5HsBiGCbtjjBg25lMeN7WDcwJTzjOex5Xvw&oe=6A1A665F" alt="Mountains" width="600" height="400">
+  </a>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/694749620_940807992054595_1501776537360156497_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGP1Lolz8A8xtj4B8hfvfJnpj4ndiRScCGmPid2JFJwIZp1-0b_0CjDzBtyyoQLjUTl4GQytdPcCZ7XJfyKGdV5&_nc_ohc=wXSeY-wcuH0Q7kNvwGh3BUW&_nc_oc=AdrglWVQ7WFcOiYU4KBXRpK2cawkFJ6ogEcXVIhLmzErC_mw_BqaACuOeU5M6QLikVM&_nc_zt=23&_nc_ht=scontent.fdur1-1.fna&_nc_gid=_ysupugcp9r535hRjp96tQ&_nc_ss=7b2a8&oh=00_Af7bd-o3EEhuutQlzlezm-SqjEuRJHGnU4Q8OSNV-0Madw&oe=6A1A7314">
+    <img src="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/694749620_940807992054595_1501776537360156497_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGP1Lolz8A8xtj4B8hfvfJnpj4ndiRScCGmPid2JFJwIZp1-0b_0CjDzBtyyoQLjUTl4GQytdPcCZ7XJfyKGdV5&_nc_ohc=wXSeY-wcuH0Q7kNvwGh3BUW&_nc_oc=AdrglWVQ7WFcOiYU4KBXRpK2cawkFJ6ogEcXVIhLmzErC_mw_BqaACuOeU5M6QLikVM&_nc_zt=23&_nc_ht=scontent.fdur1-1.fna&_nc_gid=_ysupugcp9r535hRjp96tQ&_nc_ss=7b2a8&oh=00_Af7bd-o3EEhuutQlzlezm-SqjEuRJHGnU4Q8OSNV-0Madw&oe=6A1A7314" alt="Mountains" width="600" height="400">
+  </a>
+</div>
+
+
+<div class="gallery-item">
+  <a target="_blank" href="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/695048287_940806772054717_2174268695535219250_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHjBF5LD4QiZu2zCb59K5MROE90cN40WXY4T3Rw3jRZdlEcyuhmdm4oI3NKL967fI5zWH9OmHHM3ULJyoA4oybn&_nc_ohc=p8KfqnnfbUUQ7kNvwEWa2q1&_nc_oc=Adp1Bz1H36TEK5G3yLiJsdH_OqH0l-ATkKolZeZrx6wUeOZyzbgDDU-IoE8HlMoR_ow&_nc_zt=23&se=-1&_nc_ht=scontent.fdur1-1.fna&_nc_gid=2JmJQd30w4RiBHAPOBJ-6A&_nc_ss=7b2a8&oh=00_Af6J8Qe5zTIDEq5wWewhucqaIKmK1L5V2PiOH2hIpH2g2A&oe=6A1A5FF3">
+    <img src="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/695048287_940806772054717_2174268695535219250_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHjBF5LD4QiZu2zCb59K5MROE90cN40WXY4T3Rw3jRZdlEcyuhmdm4oI3NKL967fI5zWH9OmHHM3ULJyoA4oybn&_nc_ohc=p8KfqnnfbUUQ7kNvwEWa2q1&_nc_oc=Adp1Bz1H36TEK5G3yLiJsdH_OqH0l-ATkKolZeZrx6wUeOZyzbgDDU-IoE8HlMoR_ow&_nc_zt=23&se=-1&_nc_ht=scontent.fdur1-1.fna&_nc_gid=2JmJQd30w4RiBHAPOBJ-6A&_nc_ss=7b2a8&oh=00_Af6J8Qe5zTIDEq5wWewhucqaIKmK1L5V2PiOH2hIpH2g2A&oe=6A1A5FF3" alt="Cinque Terre" width="600" height="400">
+  </a>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/693645647_940808375387890_3773432522381231518_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGYHfEt4Hu-5j49RYzckVkOe7OK_zbwaj57s4r_NvBqPob-VTyIeO4wi9E0oCk_I_qbn8aIH_xsz02yb297DfCr&_nc_ohc=VkThyhGZaHoQ7kNvwHvY9q-&_nc_oc=AdrXJOwZ1nBZnxEEzKtvhBbwXBFfRBRIQjKCs7_4Ms5XNIXRkjhjcg-rejcrjKv9t8M&_nc_zt=23&se=-1&_nc_ht=scontent.fdur1-1.fna&_nc_gid=PVBZWLy-r4omN76_oSG5ag&_nc_ss=7b2a8&oh=00_Af7xMG5WeoATSrMU1N0Fzfo1z1YQnRfnCYii9foWmlttMg&oe=6A1A7549">
+    <img src="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/693645647_940808375387890_3773432522381231518_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGYHfEt4Hu-5j49RYzckVkOe7OK_zbwaj57s4r_NvBqPob-VTyIeO4wi9E0oCk_I_qbn8aIH_xsz02yb297DfCr&_nc_ohc=VkThyhGZaHoQ7kNvwHvY9q-&_nc_oc=AdrXJOwZ1nBZnxEEzKtvhBbwXBFfRBRIQjKCs7_4Ms5XNIXRkjhjcg-rejcrjKv9t8M&_nc_zt=23&se=-1&_nc_ht=scontent.fdur1-1.fna&_nc_gid=PVBZWLy-r4omN76_oSG5ag&_nc_ss=7b2a8&oh=00_Af7xMG5WeoATSrMU1N0Fzfo1z1YQnRfnCYii9foWmlttMg&oe=6A1A7549" alt="Forest" width="600" height="400">
+  </a>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/698262087_940808845387843_6242513913514020601_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGNgPFwo1Qh2C7WsBhyGyU3dID8UnYOykt0gPxSdg7KS-Saf-GbbXCWpkcwj0BMEsxXk_D5NM64wpJZSAsdMYnM&_nc_ohc=1PlnC9nf7ooQ7kNvwG-XX9H&_nc_oc=AdoqVwa83QqrAhRaXx6iz9iQJYgTb27VwymCnsZ8xKnXwJPwlH8Cxs8VKORf0IrbTAU&_nc_zt=23&_nc_ht=scontent.fdur1-1.fna&_nc_gid=W-hSYCVG9fc1Dnkk6YYmfw&_nc_ss=7b2a8&oh=00_Af5NDSZBzXU6CDRP4tS2KIAqzt_Jn9RqBIQwl2o4DNqnsA&oe=6A1A637B">
+    <img src="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/698262087_940808845387843_6242513913514020601_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGNgPFwo1Qh2C7WsBhyGyU3dID8UnYOykt0gPxSdg7KS-Saf-GbbXCWpkcwj0BMEsxXk_D5NM64wpJZSAsdMYnM&_nc_ohc=1PlnC9nf7ooQ7kNvwG-XX9H&_nc_oc=AdoqVwa83QqrAhRaXx6iz9iQJYgTb27VwymCnsZ8xKnXwJPwlH8Cxs8VKORf0IrbTAU&_nc_zt=23&_nc_ht=scontent.fdur1-1.fna&_nc_gid=W-hSYCVG9fc1Dnkk6YYmfw&_nc_ss=7b2a8&oh=00_Af5NDSZBzXU6CDRP4tS2KIAqzt_Jn9RqBIQwl2o4DNqnsA&oe=6A1A637B" alt="Mountains" width="600" height="400">
+  </a>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/696722283_940806365388091_3293432670795643445_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGStwN1Ran-q7s303rPMAQXt-LvSHZ7jTq34u9IdnuNOh41oe3LY4vfANOeqnd0lSo34ZvmH7Y4U0mbG4hBGk3F&_nc_ohc=J8pp_EKqpmkQ7kNvwHZ8hn6&_nc_oc=AdqZGFrrIuwtEXxUTuuzesLN2lt0jlwm9djyxuL2I3LZl_T_nn_GHDBIxKpy5NA-POQ&_nc_zt=23&_nc_ht=scontent.fdur1-1.fna&_nc_gid=qjd4f0LtIUAYO_FyTCp8EA&_nc_ss=7b2a8&oh=00_Af6v8ZVPETnM7yd8Naa2SnYRaqo3Hz0CDJzwSlOpN4G2jg&oe=6A1A6A5B">
+    <img src="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/696722283_940806365388091_3293432670795643445_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGStwN1Ran-q7s303rPMAQXt-LvSHZ7jTq34u9IdnuNOh41oe3LY4vfANOeqnd0lSo34ZvmH7Y4U0mbG4hBGk3F&_nc_ohc=J8pp_EKqpmkQ7kNvwHZ8hn6&_nc_oc=AdqZGFrrIuwtEXxUTuuzesLN2lt0jlwm9djyxuL2I3LZl_T_nn_GHDBIxKpy5NA-POQ&_nc_zt=23&_nc_ht=scontent.fdur1-1.fna&_nc_gid=qjd4f0LtIUAYO_FyTCp8EA&_nc_ss=7b2a8&oh=00_Af6v8ZVPETnM7yd8Naa2SnYRaqo3Hz0CDJzwSlOpN4G2jg&oe=6A1A6A5B" alt="Mountains" width="600" height="400">
+  </a>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/696749726_940806318721429_7291809930149277203_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG38IxlGllkTpxEQTSeBofMbCVN4odISSZsJU3ih0hJJmdHBNTzchGXUVezjUQ8kxxTHaA2rLfA0FDfEPtFVZb-&_nc_ohc=OqVgMyDHwvIQ7kNvwHZhEGP&_nc_oc=AdrUh__AI1oRyRtYJntJIwZ5ubZgzpb5ebfjwFFg5BeZZavbv9eZZU7poBDIccoa_wg&_nc_zt=23&_nc_ht=scontent.fdur1-1.fna&_nc_gid=z8tBLDX2DAVoOuL4pMX9Gw&_nc_ss=7b2a8&oh=00_Af4f0w3fVq_96-OweRZSvcp2HGNPMquwhnc1-2l36S_m4g&oe=6A1A6805">
+    <img src="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/696749726_940806318721429_7291809930149277203_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeG38IxlGllkTpxEQTSeBofMbCVN4odISSZsJU3ih0hJJmdHBNTzchGXUVezjUQ8kxxTHaA2rLfA0FDfEPtFVZb-&_nc_ohc=OqVgMyDHwvIQ7kNvwHZhEGP&_nc_oc=AdrUh__AI1oRyRtYJntJIwZ5ubZgzpb5ebfjwFFg5BeZZavbv9eZZU7poBDIccoa_wg&_nc_zt=23&_nc_ht=scontent.fdur1-1.fna&_nc_gid=z8tBLDX2DAVoOuL4pMX9Gw&_nc_ss=7b2a8&oh=00_Af4f0w3fVq_96-OweRZSvcp2HGNPMquwhnc1-2l36S_m4g&oe=6A1A6805" alt="Northern Lights" width="600" height="400">
+  </a>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/695743983_940806502054744_8388886592045348447_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFr3B_ru48Py71BNIyi60oNIrGBlxr-Xt0isYGXGv5e3W0d5BXR__H4cWGTxlToyIqiIO3Spqj7u-uDzcWjO-jH&_nc_ohc=vM_hstjah54Q7kNvwFv7IAa&_nc_oc=AdqWu2_PRDlxAz7N1g3q40DU1Ne04g44HtmcAMgDPFTsWGy5_rFtAyCZJfKPnouNQGk&_nc_zt=23&_nc_ht=scontent.fdur1-1.fna&_nc_gid=T31HsrR9GPJtUel9nqpjAw&_nc_ss=7b2a8&oh=00_Af4K_eSsVhjfY1KJsKU8JCZTLFBXWs-zbBvLOz1lVMuA5A&oe=6A1A932E">
+    <img src="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/695743983_940806502054744_8388886592045348447_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFr3B_ru48Py71BNIyi60oNIrGBlxr-Xt0isYGXGv5e3W0d5BXR__H4cWGTxlToyIqiIO3Spqj7u-uDzcWjO-jH&_nc_ohc=vM_hstjah54Q7kNvwFv7IAa&_nc_oc=AdqWu2_PRDlxAz7N1g3q40DU1Ne04g44HtmcAMgDPFTsWGy5_rFtAyCZJfKPnouNQGk&_nc_zt=23&_nc_ht=scontent.fdur1-1.fna&_nc_gid=T31HsrR9GPJtUel9nqpjAw&_nc_ss=7b2a8&oh=00_Af4K_eSsVhjfY1KJsKU8JCZTLFBXWs-zbBvLOz1lVMuA5A&oe=6A1A932E" alt="Mountains" width="600" height="400">
+  </a>
+</div>
+
+<div class="gallery-item">
+  <a target="_blank" href="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/695553650_940809228721138_8930621627450874440_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHBbeFXX7MFMqDq7_3Pkpr3Wp9_Y0oTYv5an39jShNi_kDwE-Uc71nddbPROTBTcO3Au2pYA_y3DbP4wLP1cGkp&_nc_ohc=RwAh23iYtYUQ7kNvwExVOGd&_nc_oc=AdrRpadPv23_RZlE7kii3QvGxns8H00sCLDbuBRwvtxtqSYET2ZtQXT8afEcqum-cds&_nc_zt=23&se=-1&_nc_ht=scontent.fdur1-1.fna&_nc_gid=_A2zBU6810Fpvcp6VsrO-Q&_nc_ss=7b2a8&oh=00_Af4kWtg-JokT2G2ovN2Hc1UamlHdiAG7INBjCtOh6dDtYg&oe=6A1A71F0">
+    <img src="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/695553650_940809228721138_8930621627450874440_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHBbeFXX7MFMqDq7_3Pkpr3Wp9_Y0oTYv5an39jShNi_kDwE-Uc71nddbPROTBTcO3Au2pYA_y3DbP4wLP1cGkp&_nc_ohc=RwAh23iYtYUQ7kNvwExVOGd&_nc_oc=AdrRpadPv23_RZlE7kii3QvGxns8H00sCLDbuBRwvtxtqSYET2ZtQXT8afEcqum-cds&_nc_zt=23&se=-1&_nc_ht=scontent.fdur1-1.fna&_nc_gid=_A2zBU6810Fpvcp6VsrO-Q&_nc_ss=7b2a8&oh=00_Af4kWtg-JokT2G2ovN2Hc1UamlHdiAG7INBjCtOh6dDtYg&oe=6A1A71F0" alt="Mountains" width="600" height="400">
+  </a>
+</div>
+
+
+<div class="gallery-item">
+  <a target="_blank" href="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/696378436_940858498716211_2368742670772572479_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH9gunYFIiqRGR7-bwUumjMbnS5iC5Klk1udLmILkqWTfvc45Zv5JivpRRWdcBgCp2mjL-Ljwb8F8O6bOW5WgR9&_nc_ohc=UVzmNnRxGL8Q7kNvwHMPXys&_nc_oc=AdoJzpFDMhSD2C7yz7M3EBNxmMDDEhi9Z0Jh0kDZJuYPL80QwJ_V3wJvKq3nneIUMf4&_nc_zt=23&se=-1&_nc_ht=scontent.fdur1-1.fna&_nc_gid=nOZO8v5KMa-xWyaVmBgNrw&_nc_ss=7b2a8&oh=00_Af6MkJUS5z8fvyVCvero9A80EMo6m7uxRrgQeiQeOPHo2Q&oe=6A1A8C43">
+    <img src="https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-6/696378436_940858498716211_2368742670772572479_n.jpg?stp=cp6_dst-jpegr_tt6&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeH9gunYFIiqRGR7-bwUumjMbnS5iC5Klk1udLmILkqWTfvc45Zv5JivpRRWdcBgCp2mjL-Ljwb8F8O6bOW5WgR9&_nc_ohc=UVzmNnRxGL8Q7kNvwHMPXys&_nc_oc=AdoJzpFDMhSD2C7yz7M3EBNxmMDDEhi9Z0Jh0kDZJuYPL80QwJ_V3wJvKq3nneIUMf4&_nc_zt=23&se=-1&_nc_ht=scontent.fdur1-1.fna&_nc_gid=nOZO8v5KMa-xWyaVmBgNrw&_nc_ss=7b2a8&oh=00_Af6MkJUS5z8fvyVCvero9A80EMo6m7uxRrgQeiQeOPHo2Q&oe=6A1A8C43" alt="Mountains" width="600" height="400">
+  </a>
+</div>
+
+
+</div>
+
+</p>
+<hr class="d-sm-none">
+
+      <p><b>Vir meer fotos van die kamp klik op die Facebook ikoon:</b> <a href="https://web.facebook.com/share/p/1BEAXoa2Cj/" target="_blank"><img src="IMG/facebook.png" alt="Facebook" width="50" height="50"></a><br>
+      
+       
+      </p>
+      <hr class="d-sm-none">
+      <div class="fakeimg"><img src="IMG/Vindjouself.jpg" style="width:100%;height:80%; max-width: 700px; display: block; margin-left: auto;
+  margin-right: auto;"></div><br>
+
+            <hr class="d-sm-none">
+             <div class="fakeimg"><img src="IMG/Eie gedagtes tronk.jpg" style="width:100%;height:auto; max-width: 700px; display: block; margin-left: auto;
+  margin-right: auto;"></div>
+
+  
+
+
+    
+
+
+
+
+<script>
+     function toggleDiv() {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+   window.addEventListener("load", () => {
+  const loader = document.getElementById("loader-wrapper");
+  loader.classList.add("loader-hidden");
+});
+function setCookie(cname, cvalue, exdays) {
+  const d = new Date();
+  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+  let expires = "expires="+d.toUTCString();
+  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+
+function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+function checkCookie() {
+  let user = getCookie("username");
+  if (user != "") {
+    alert("Welcome again " + user);
+  } else {
+    user = prompt("Please enter your name:", "");
+    if (user != "" && user != null) {
+      setCookie("username", user, 365);
+    }
+  }
+}
+</script>
+
+
+<h3>Some Links</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+</div>
+    </div>
+    </div>
+
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>Meer oor ons</h4>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Kampe</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+  </div>
+</footer>
+      <div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+</div>
+</body>
+</html>

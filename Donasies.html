@@ -5,11 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <style>
-     /* Full screen overlay */
+  </head>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+   <img src="Genesinguitdiehartondek.png" style="max-width:100%;height:auto;">
+</div>
+<style>
+  /* Full screen overlay */
 #loader-wrapper {
   position: fixed;
   top: 0;
@@ -44,54 +49,21 @@
   opacity: 0;
   visibility: hidden;
 }
-  .fakeimg {
-    height: 400x;
-    background: #ffffff;
-  }
-   th, td {
-    border-style: solid;
-  border-color: #000000;
-}
-.text-columns {
-  column-count: 2;
-  column-gap: 50px;
-}
- #myDIV{
-            background:rgb(94, 133, 139);
-            border:3px solid rgb(0, 0, 0);
-            padding:5px;
-            margin:5px ;
-        }
-.form {
-  border: 2px solid rgb(0, 0, 0);
-  line-height: 2.5;
-  width: 100%;
-  padding: 5px;
-  font-size: 1.10rem;
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #ee0000;
+  color: white;
+  border-radius: 50%; /* Makes it a circle */
+  display: flex;
+  justify-content: center; /* Horizontally centers text */
+  align-items: center;     /* Vertically centers text */
   text-align: center;
-  color: rgb(0, 0, 0);
-  text-shadow: 1px 1px 1px black;
-  border-radius: 10px;
-  background-color: rgb(151, 148, 148);
-  background-image: linear-gradient(
-    to top left,
-    rgb(0 0 0 / 0.2),
-    rgb(0 0 0 / 0.2) 30%,
-    transparent
-  );
-  box-shadow:
-    inset 2px 2px 3px rgb(255 255 255 / 0.6),
-    inset -2px -2px 3px rgb(0 0 0 / 0.6);
 }
-
-.form:hover {
-  background-color: rgb(0, 174, 255);
-}
-
-.form:active {
-  box-shadow:
-    inset -2px -2px 3px rgb(255 255 255 / 0.6),
-    inset 2px 2px 3px rgb(0 0 0 / 0.6);
+.container {
+  display: flex;          /* Aligns circle and text in a row */
+  align-items: center;    /* Vertically centers text with the circle */
+  gap: 15px;              /* Adds space between the circle and text */
 }
 .button {
   border: none;
@@ -111,8 +83,8 @@
   border-radius: 100px;
   border: 2px solid #000000;
   padding: 5px;
-  width: 75%;
-  height: 50px;
+  width: 100%;
+  height: 100px;
   color: rgb(0, 0, 0);
 }
 
@@ -125,8 +97,8 @@
   border-radius: 100px;
   border: 2px solid #000000;
   padding: 5px;
-  width: 60%;
-  height: 50px;
+  width: 100%;
+  height: 100px;
   color: rgb(0, 0, 0);
 }
 
@@ -179,17 +151,33 @@
     width: 100%; /* Single column on phones */
   }
 }
-  </style>
-</head>
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item {
+  margin: 5px;
+
+  width: 180px;
+}
+
+div.gallery-item:hover {
+  
+  transform: scale(1.2);
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+</style>
+
 <body>
   <div id="loader-wrapper">
   <div class="loader"></div>
 </div>
-
-<div class="jumbotron text-center" style="margin-bottom:0">
-   <img src="Genesinguitdiehartondek.png" style="max-width:100%;height:auto;">
-</div>
-
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <a class="navbar-brand" href="index.html">Tuisblad</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -208,9 +196,6 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="Seminaars.html">Seminaars</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
       </li>  
       <li class="nav-item">
         <a class="nav-link" href="#">Link</a>
@@ -221,106 +206,33 @@
     </ul>
   </div>  
 </nav>
-
 <div class="container" style="margin-top:30px">
   <div class="row">
-    <div class="col-sm-4">
-      
-      
-      <div class="fakeimg"><img src="genesinguitdiehart.png" style="max-width:100%;height:100%;"></div>
-      <p>PSALM 147:3 - Hy genees die wat gebroke is van hart en Hy verbind hulle wonde</p>
 
-      <hr class="d-sm-none">
-    </div>
-    <div class="col-sm-8">
-      <h2 style="font-size:5vw"><b>Waaroor gaan Genesing Uit Die Hart?</b></h2>
-      
-      <div class="fakeimg"><img src="Help.jpg" style="max-width:100%;height:100%;"></div>
-      <p style="font-size:30px"><b>Ons Passie</b></p>
-      <p>Ons Passie is om ‘n pad te stap met individue wat geestelike en emosionele sielswonde het, sodat elkeen wat deur die hulp van Die Heilige Gees by volkome genesing kan uitkom, en hulle unieke skeppingsdoel kan ontdek.</p>
-<p>Veronica Loots, praktiseer in Pastorale Berading en vorm deel van ‘n span fasiliteerders.
-Ons is ook deel van ‘Professional counselling Academy’ en Gerigistreer by ‘S.A Association’ Reg. No 0159-11/2023.</p>
+<div class="col-sm-12">
+  <h1 style="text-align:center;"><b><u>Donasies</u></b>
+</h1>
 
-<p>Die kern van ons missie is om 'n ruimte van empatie en ondersteuning te skep vir individue wat deur moeilike tydperke gaan. Ons erken die inherente waarde van elke siel en die unieke uitdagings wat elke persoon mag ervaar. Dit is ons roeping om 'n hand uit te reik na diegene wat diep binne in hulself 'n behoefte aan genesing voel.
-  </p>
+<p style="font-size:16px">
+Ons doen alles in ons vermoë om die kostes vir kampe en kursusse so laag moontlik te hou. Steeds is daar baie mense, en juis die mense wat dit die nodigste het wat nie kan bekostig om kampe en kursusse by te woon om hulle self op te bou nie.</p>
+
+<p>Ons tyd gee ons gratis, daar is wel drukwerk, internet kostes, venues ens. wat geld kos. Alle vrywillge donasies word terug geploeg in die Koningkryk van God in en Hy seen die blymoedige gewer. Ons is oortuig daarvan dat hierdie vrugbare grond is om in te saai.</p>
+
+<p>BANKBESONDERHEDE 📞 Kontakpersoon /📞 Navrae:
+Bank: Capitec Bank 👤 Veronica Loots
+Rekeningnaam: Genesing 📱 Bel / WhatsApp: 082 608 2104
+Rekeningnommer: 1647791101 📧 E-pos: veronicaloots62@gmail.comTakode: 470010</p>
+
   
-    <hr style="height:2px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
+
+
     
-    
-      <div class="fakeimg"><img src="Praise.jpg" style="max-width:100%;height:100%;"></div>
-      <p style="font-size:30px"><b>ONS DOELWIT</b>
-      </p>
-      <p style="font-size:16px"><b>Genesing uit die hart se doelwit is om mense te help om ten volle geestelik te herstel sodat elkeen hul volle potensiaal kan bereik</b>
-      </p>
 
-      <ul>
-  <li>Hoe lyk jou sielwonde?</li>
-  <li>Wat gaan in jou sielsdemensie aan?</li>
-  <li>Is jy emosioneel gewond?</li>
-</ul>
-
-<p>Emosionele welstand het ‘n groot invloed op jou lewe om jou potensiaal te bereik, daarom maak ons dit ons missie om mense bewus te maak van die bogenoemde, sodat almal by genesing kan uitkom, omdat elke persoon verdien om voluit te lewe!</p>
-<hr class="d-sm-none">
-      <div class="fakeimg"><img src="Hurt.jpg" style="max-width:100%;height:100%;"></div>
-      <p style="font-size:30px"><b>HOE SIEN JY JOUSELF</b>
-      </p>
-      <p style="font-size:16px">Ons streef daarna om mense te help om in hulle gees, siel en liggaam gesond te word.<br>
-
-Elke persoon se genesing moet van binne af plaasvind. 97% van ons siektes kom uit die siel en dit beïnvloed die liggaam.<br>
-Negatiewe en verkeerde denkpatrone besoedel die liggaam en veroorsaak dan uit die aard allerlei siektes wat gekoppel word aan spesifieke emosionele toestande soos vrees, despressie en skuldgevoellens.<br>
-
-Ons moet die OORSPRONG van die probleem ontdek, en nie die simptome aanhou behandel nie. <br>GENESING UIT DIE HART wil jou graag help om daadwerklik jou lewe sodanig te verander, dat jy gesond, gebalanseerd en vervuld jou lewensroeping kan uitleef.<br>
-Ons berading spesialiseer in verskeie areas
-      </p>
-   <hr style="height:2px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
-    <h1 style="text-align:center;"><u>Berading</u></h1>
-    <p><b>Onderwerpe wat dikwels bespreek word en hanteer word is onder andere:</b></p>
-     <div class="text-columns" style="font-size 3vw">
-      <p>• Kinders wat gemolesteer is of trauma beleef.<br>
-• Trauma by volwassenes.<br>
-• Konflikhantering.<br>
-• Woede en angs.<br>
-• Depressie<br>
-• Verwerping<br>
-• Swak selfbeeld.<br>
-• Egskeiding geleiding<br>
-• Rou proses<br>
-• Verkragting<br>
-• Satanisme<br>
-• Okkulte<br>
-• Bevryding<br>
-• Eetversteurings<br>
-• Selfmoordneigings<br>
-• Selfbeserings<br>
-• Verslawing<br>
-• Voorhuwelikse seks<br>
-• Mishandeling<br>
-• Huweliks berading<br>
-</p>
-
- 
-</div>
-
-<hr sm-de-none>
-
-<p><b>Open beradings form met die volgende link</b></p>
-<button  class="berading form" type="button" id="toggleDivButton" onclick="toggleDiv()">Berading Form </button>
-<div id="myDIV" style="display:none;"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLScS2QBJD5Q4GXz-WVVKVIwo5DK0LX2pcxF8v2shUkhgLqDm-A/viewform?embedded=true" width="100%" height="2003" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
-<p><b>KONTAK ONS GERUS VIR N AFSPRAAK OOR GOOGLE MEET OF INDIVIDUELE BERADING SESSIES</b></p>
-<p>Veronica Loots: <a href="tel:0826082104">082 608 2104</a><a href="tel:0826082104">
-  <a href="tel:0826082104" target="_blank"><img src="whatsapp.png" alt="WhatsApp" width="100" height="100" style="text-align: center;"></a>
-</p>
- Email:<br><a href="mailto:veronicaloots62@gmail.com">veronicaloots62@gmail.com</a> <a href="mailto:veronicaloots62@gmail.com" target="_blank"><img src="communication.png" alt="Email" width="100" height="100" style="text-align: center;"></a>
-
-<hr style="height:2px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0)">
-<p>
-  
-</p>
 
 
 
 <script>
-    function toggleDiv() {
+     function toggleDiv() {
         var x = document.getElementById("myDIV");
         if (x.style.display === "none") {
             x.style.display = "block";
@@ -328,7 +240,7 @@ Ons berading spesialiseer in verskeie areas
             x.style.display = "none";
         }
     }
-    window.addEventListener("load", () => {
+   window.addEventListener("load", () => {
   const loader = document.getElementById("loader-wrapper");
   loader.classList.add("loader-hidden");
 });
@@ -367,7 +279,8 @@ function checkCookie() {
 }
 </script>
 
-      <h3>Some Links</h3>
+
+<h3>Some Links</h3>
       <p>Lorem ipsum dolor sit ame.</p>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
@@ -383,12 +296,11 @@ function checkCookie() {
           <a class="nav-link disabled" href="#">Disabled</a>
         </li>
       </ul>
+</div>
     </div>
-  </div>
-</div>
-</div>
+    </div>
 
-<footer class="footer">
+    <footer class="footer">
   <div class="footer-container">
     <div class="footer-col">
       <h4>Meer oor ons</h4>
@@ -418,7 +330,7 @@ function checkCookie() {
     <p>&copy; 2024 Your Company. All Rights Reserved.</p>
   </div>
 </footer>
-
+      
 
 </body>
 </html>
